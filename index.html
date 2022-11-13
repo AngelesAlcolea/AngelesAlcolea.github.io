@@ -1,116 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Foca</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
-      rel="stylesheet"
-    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Aventurera</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  />
 </head>
 <body>
-    <header>
-        <nav>
-            <div>
-                <a href="#section1">Presentación</a>
-            </div>
-            <div>
-                <a href="#section2">Skills</a>
-            </div>
-            <div>
-                <a href="#section3">Formulario</a>
-            </div>
-        </nav>
-    </header>
+  <header>
+      <nav class="navbar">
+        <a class="link" href="#section1">Acerca de mí</a>
+        <a class="link" href="#section2">Habilidades</a>
+        <a class="link" href="#section3">Contacto</a>
+      </nav>
+  </header>
 
-    <main>
-        <section id="section1">
-            <img src="https://okdiario.com/img/2020/02/29/focas-655x368.jpg" alt="Aventurera">
-            <h1>Portfolio Foca</h1>
-            <p>Hola, me llamo Foca, tengo 5 años y adoro el pimiento rojo</p>
-        </section>
-        <section id="section2">
-            <div>Skill</div>
-        </section>
-        <section id="section3">
-            <div>
-                <form>
-                    <fieldset>
-                        <label>
-                            Nombre
-                            <input type="text" placeholder="Pon tu nombre" required>
-                        </label>
-                        <label>
-                            Apellido
-                            <input type="text" placeholder="Pon tu apellido" required>
-                        </label>
-                        <label>
-                            Teléfono (opcional)
-                            <input type="tel" placeholder="Número de teléfono">
-                        </label>
-                        <label>
-                            Email
-                            <input type="email" placeholder="dirección de correo" required>
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <p>Como me conociste?</p>
-                        <label>
-                            Polo norte
-                            <input name="opciones" type="radio" checked>
-                        </label>
-                        <label>
-                            Zoo
-                            <input name="opciones" type="radio" >
-                        </label>
-                        <label>
-                            Circo
-                            <input name="opciones" type="radio" >
-                        </label>
-                        <label>
-                            Libro
-                            <input name="opciones" type="radio" >
-                        </label>
-                    </fieldset>
-                    <fieldset>
-                        <label>
-                            Más información
-                            <textarea placeholder="Qué más quieres saber?"></textarea>
-                        </label>
-        
-                    </fieldset>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <a href="">
-                A
-                <i></i>
-            </a>
-            <a href="">
-                B
-                <i></i>
-            </a>
-            <a href="">
-                C
-                <i></i>
-            </a>
-            <a href="">
-                D
-                <i></i>
-            </a>
-            <a href="">
-                E
-                <i></i>
-            </a>
+  <main>
+    <div class="container">
+      <div class="image">
+        <!-- <img src="inmersion_monet.jpg" alt="Monet"> -->
+        <img src="aventurera_van_gogh.jpg" alt="Aventurera">
+      </div>
+      <h1 class="title">Los personajes de Kasailustrada</h1>
+      <p class="autora">
+        by Ángeles Alcolea
+      </p>
+      <div class="section" id="section1">
+        <h1 class="subtitle">Aventurera</h1>
+        <p class="present p1">
+          "Hola, me llamo Aventurera, tengo la misma edad que tú y me encantan las estrellas y los universos de Vang Ghog.
+        </p>
+        <p class="present p2">
+          Si quieres conocerme, rellena el formulario que encontrarás más abajo y te enviaré información sobre mis gustos e inquietudes". 
+        </p>
+        <p class="present">
+          ¡Descubre mis experiencias a través del mundo!
+        </p>
+      </div>
+      <div class="section" id="section2">
+        <p>Mis habilidades son:</p>
+        <p>Curiosidad</p>
+        <div class="bar">
+          <div class="progress pr1" >
+          </div>
         </div>
-    </footer>
+        <p>Valor</p>
+        <div class="bar">
+          <div class="progress pr2" >
+          </div>
+        </div>
+        <p>Flexibilidad</p>
+        <div class="bar">
+          <div class="progress pr3" >
+          </div>
+        </div>
+        <p>Confianza</p>
+        <div class="bar">
+          <div class="progress pr4" >
+          </div>
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <form method="get">
+          <fieldset class="form1">
+            <label>
+              Nombre
+              <input type="text" placeholder="Pon tu nombre" required>
+            </label>
+            <label>
+              Apellido
+              <input type="text" placeholder="Pon tu apellido" required>
+            </label>
+            <label>
+              Teléfono (opcional)
+              <input type="tel" placeholder="Número de teléfono">
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="dirección de correo" required>
+            </label>
+          </fieldset>
+          <fieldset class="form2">
+            <p class="how">Y tú, ¿eres aventurera?</p>
+            <label>
+              <input name="options" type="radio" checked>
+              Muy poco
+            </label>
+            <label>
+              <input name="options" type="radio" >
+              Depende del día
+            </label>
+            <label>
+              <input name="options" type="radio" >
+              Bastante
+            </label>
+            <label>
+              <input name="options" type="radio" >
+              Me apunto a todo
+            </label>
+          </fieldset>
+          <fieldset class="form3">
+            <label class="aboutus">
+              Más información
+              <textarea maxlength="180" class="aboutarea" placeholder="¿Qué más quieres saber o compartir?"></textarea>
+            </label>
+          </fieldset>
+          <div class="submitcont">
+            <input class="submit" type="submit" value="Enviar">
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a class="icon" href="https://www.facebook.com/kasailustrada" target="_blank" >
+        <i class="fab fa-facebook-f"></i>
+        <!-- <a class="icon" href="https://www.domestika.org/es/kasailustrada" target="_blank" ></a> -->
+        <!-- <i class="domestika"></i> -->
+      </a>
+      <a class="icon" href="https://www.pinterest.es/angelesalcolea/" target="_blank" >
+        <i class="fab fa-pinterest-p"></i>
+      </a>
+      <a class="icon" href="https://www.instagram.com/kasailustrada/" target="_blank" >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/angeles-alcolea/" target="_blank" >
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="icon" href="https://github.com/AngelesAlcolea" target="_blank" >
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
